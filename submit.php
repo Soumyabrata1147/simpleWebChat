@@ -1,5 +1,4 @@
 <?php
-date_default_timezone_set('Asia/Kolkata');
 session_start();
 $servername="localhost";
 $user="root";
@@ -29,8 +28,6 @@ if (!$con) {
 echo "<form method='post' action='setchat.php'>
     <div class='input'> 
     <input type='text' name='recievername' placeholder='Whom to send' required><br>
-    <input name='message' type='text'placeholder='Message' required><br>
-    <input name='date' type='hidden' value='".date('Y-m-d H:i:s')."'>
 </div>
     <input class='btn'type='submit' name='save'value='Save'>
 </form>";
