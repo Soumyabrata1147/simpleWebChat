@@ -26,10 +26,10 @@ input{
 a{
     color:#111;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.6em;
     text-decoration: none;
     font-weight: 700;
-    line-height:1.2em;
+    color:#f0f0f0f0;
 }
 span{
     color:#111;
