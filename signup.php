@@ -1,10 +1,8 @@
 <?php
+include_once "connection.php";
+?>
+<?php
 //server_connection variables
-$servername="localhost";
-$user="root";
-$password="";
-$dbname="webchat";
-$con=mysqli_connect($servername,$user,$password,$dbname);
 //checking connection
 if (!$con) {
     die("Connection failed: " . mysqli_connect_error());

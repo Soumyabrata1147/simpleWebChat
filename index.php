@@ -1,9 +1,7 @@
 <?php
-$servername="localhost";
-$user="root";
-$password="";
-$dbname="webchat";
-$con=mysqli_connect($servername,$user,$password,$dbname);
+include_once "connection.php";
+?>
+<?php
 //checking connection
 if (!$con) {
     die("Connection failed: " . mysqli_connect_error());
@@ -40,7 +38,7 @@ session_start();
  if($result==1){
     $_SESSION['name']=$name;
     $_SESSION['pass']=$pass;
-    header("location:getchat.php");
+    header("location:submit.php");
  }else{
     die("sorry, something went wrong,try again later");
      header("location:index.php");
